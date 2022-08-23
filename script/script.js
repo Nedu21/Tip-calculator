@@ -10,8 +10,3 @@ const tipTotalAmount = document.getElementById("tip__total--Amount");
 const resetBtn = document.querySelector(
   ".tipcontainer__display--button button"
 );
-
-// Change the color of the reset button
-if (tipTotalAmount.innerText !== "$0.00") {
-  resetBtn.classList.add("reset__active");
-}
