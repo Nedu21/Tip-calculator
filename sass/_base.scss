@@ -1,0 +1,39 @@
+// Primary
+$color-strong-cyan: hsl(172, 67%, 45%);
+
+// Neutral
+$color-very-dark-cyan: hsl(183, 100%, 15%);
+$color-dark-grayish-cyan: hsl(186, 14%, 43%);
+$color-grayish-cyan: hsl(186, 13%, 56%);
+$color-light-grayish-cyan: hsl(185, 41%, 84%);
+$color-very-light-grayish-cyan: hsl(189, 41%, 97%);
+$color-white: hsl(0, 0%, 100%);
+$color-error-text: hsl(10, 55%, 50%);
+
+// FONT VARIABLES
+$font-primary: "Space Mono", monospace;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 68.75em; // 1100px
+$bp-small: 50em; // 800px;
+$bp-smallest: 25em; // 400px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-very-dark-cyan;
+  font-weight: 700;
+  font-size: 2rem;
+}

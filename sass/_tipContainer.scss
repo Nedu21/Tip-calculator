@@ -1,0 +1,180 @@
+#main {
+  background-color: $color-light-grayish-cyan;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem 0;
+  justify-content: center;
+  align-items: center;
+
+  // & .logo {
+  //   justify-self: center;
+  //   align-self: center;
+  // }
+
+  & .tipcontainer {
+    background-color: $color-white;
+    width: 70rem;
+    //   height: 35rem;
+    padding: 2.4rem;
+    border-radius: 17px;
+    box-shadow: 0px 1px 8px $color-very-dark-cyan;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2.2rem;
+
+    &__inputs {
+      &--bill {
+        margin-bottom: 2.8rem;
+      }
+
+      &--label {
+        color: $color-dark-grayish-cyan;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &--form {
+        position: relative;
+
+        & input[type="text"] {
+          background-color: $color-very-light-grayish-cyan;
+          border: none;
+          font-family: inherit;
+          font-weight: inherit;
+          font-size: inherit;
+          text-align: right;
+          cursor: pointer;
+          border-radius: 5px;
+          padding: 0 1rem;
+          width: 100%;
+
+          &:focus {
+            outline: none;
+            border: 2px solid $color-strong-cyan;
+          }
+        }
+
+        & img {
+          position: absolute;
+          top: 7px;
+          left: 7px;
+        }
+      }
+
+      &--tips {
+        margin-bottom: 2.8rem;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem 1.5rem;
+
+        & input[type="button"] {
+          background-color: $color-very-dark-cyan;
+          color: $color-white;
+          font-family: inherit;
+          font-weight: inherit;
+          font-size: inherit;
+          display: block;
+          cursor: pointer;
+          padding: 0.6rem 0rem;
+          width: 9.6rem;
+          border: none;
+          border-radius: 5px;
+
+          // &:hover {
+          //   background-color: $color-light-grayish-cyan;
+          //   color: $color-very-dark-cyan;
+          // }
+        }
+
+        & input[type="text"] {
+          background-color: $color-very-light-grayish-cyan;
+          color: $color-very-dark-cyan;
+          font-family: inherit;
+          font-weight: inherit;
+          font-size: inherit;
+          cursor: pointer;
+          text-align: center;
+          padding: 0.6rem 0rem;
+          width: 9.6rem;
+          border: none;
+          border-radius: 5px;
+
+          &:focus {
+            outline: none;
+            border: 2px solid $color-strong-cyan;
+          }
+        }
+      }
+
+      &--persons {
+        position: relative;
+
+        &_errormsg {
+          position: absolute;
+          color: $color-error-text;
+          font-size: 1.6rem;
+          margin-bottom: 0.5rem;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+
+    &__display {
+      background-color: $color-very-dark-cyan;
+      border-radius: 10px;
+      padding: 3rem;
+      color: $color-grayish-cyan;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &--values {
+        & > div {
+          display: flex;
+          justify-content: space-between;
+
+          &:not(:last-child) {
+            margin-bottom: 2rem;
+          }
+        }
+
+        &_text {
+          & p {
+            color: $color-very-light-grayish-cyan;
+            font-size: 1.4rem;
+
+            & span {
+              display: block;
+              color: $color-grayish-cyan;
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        &_figures {
+          color: $color-strong-cyan;
+          font-size: 3rem;
+        }
+      }
+
+      &--button {
+        & button {
+          color: $color-very-dark-cyan;
+          background-color: #006f75;
+          border: none;
+          font-size: 1.8rem;
+          font-weight: 700;
+          width: 100%;
+          padding: 1rem 0;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

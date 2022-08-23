@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div id="main">
+      <img class="logo" src="images/logo.svg" alt="logo" />
+
+      <div class="tipcontainer">
+        <div class="tipcontainer__inputs">
+          <div class="tipcontainer__inputs--bill">
+            <p class="tipcontainer__inputs--label">Bill</p>
+
+            <form class="tipcontainer__inputs--form" action="">
+              <input type="text" placeholder="0" id="bill" />
+              <img src="images/icon-dollar.svg" alt="dollar sign" />
+            </form>
+          </div>
+
+          <p class="tipcontainer__inputs--label">Select Tip %</p>
+
+          <div class="tipcontainer__inputs--tips">
+            <input class="tip" data-value="5" type="button" value="5%" />
+            <input class="tip" data-value="10" type="button" value="10%" />
+            <input class="tip" data-value="15" type="button" value="15%" />
+            <input class="tip" data-value="25" type="button" value="25%" />
+            <input class="tip" data-value="50" type="button" value="50%" />
+            <input class="custom" type="text" placeholder="Custom" />
+          </div>
+
+          <div class="tipcontainer__inputs--persons">
+            <p class="tipcontainer__inputs--label">Number of People</p>
+
+            <p class="tipcontainer__inputs--persons_errormsg">Can't be zero</p>
+            <form class="tipcontainer__inputs--form" action="">
+              <input type="text" placeholder="0" id="persons" />
+              <img src="images/icon-person.svg" alt="person icon" />
+            </form>
+          </div>
+        </div>
+
+        <div class="tipcontainer__display">
+          <div class="tipcontainer__display--values">
+            <div>
+              <div class="tipcontainer__display--values_text">
+                <p>Tip Amount <span>/ person</span></p>
+              </div>
+              <div
+                id="tip__amount"
+                class="tipcontainer__display--values_figures"
+              >
+                $0.00
+              </div>
+            </div>
+
+            <div>
+              <div class="tipcontainer__display--values_text">
+                <p>Total <span>/ person</span></p>
+              </div>
+              <div
+                id="tip__total--Amount"
+                class="tipcontainer__display--values_figures"
+              >
+                $0.00
+              </div>
+            </div>
+          </div>
+
+          <div class="tipcontainer__display--button">
+            <button>RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script/script.js"></script>
+  </body>
+</html>
