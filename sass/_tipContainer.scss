@@ -113,14 +113,14 @@
       &--persons {
         position: relative;
 
-        // &_errormsg {
-        //   position: absolute;
-        //   color: $color-error-text;
-        //   font-size: 1.6rem;
-        //   margin-bottom: 0.5rem;
-        //   top: 0;
-        //   right: 0;
-        // }
+        &_errormsg {
+          position: absolute;
+          color: $color-error-text;
+          font-size: 1.6rem;
+          margin-bottom: 0.5rem;
+          top: 0;
+          right: 0;
+        }
       }
     }
 
@@ -177,13 +177,4 @@
       }
     }
   }
-}
-.errormsg {
-  position: absolute;
-  color: $color-error-text;
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-  top: 0;
-  right: 0;
-  visibility: hidden;
 }
