@@ -53,8 +53,7 @@ body {
         padding: 0 1rem;
         width: 100%; }
         #main .tipcontainer__inputs--form input[type="text"]:focus {
-          outline: none;
-          border: 2px solid #26c0ab; }
+          outline: none; }
       #main .tipcontainer__inputs--form img {
         position: absolute;
         top: 7px;
@@ -93,13 +92,6 @@ body {
           border: 2px solid #26c0ab; }
     #main .tipcontainer__inputs--persons {
       position: relative; }
-      #main .tipcontainer__inputs--persons_errormsg {
-        position: absolute;
-        color: #c65139;
-        font-size: 1.6rem;
-        margin-bottom: 0.5rem;
-        top: 0;
-        right: 0; }
     #main .tipcontainer__display {
       background-color: #00494d;
       border-radius: 10px;
@@ -132,6 +124,15 @@ body {
         width: 100%;
         padding: 1rem 0;
         border-radius: 5px; }
+
+.errormsg {
+  position: absolute;
+  color: #c65139;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  top: 0;
+  right: 0;
+  visibility: hidden; }
 
 .reset__active {
   background-color: #c5e4e7 !important; }
