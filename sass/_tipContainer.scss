@@ -113,7 +113,7 @@
       &--persons {
         position: relative;
 
-        &_errormsg {
+        & .errormsg {
           position: absolute;
           color: $color-error-text;
           font-size: 1.6rem;

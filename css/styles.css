@@ -93,7 +93,7 @@ body {
           border: 2px solid #26c0ab; }
     #main .tipcontainer__inputs--persons {
       position: relative; }
-      #main .tipcontainer__inputs--persons_errormsg {
+      #main .tipcontainer__inputs--persons .errormsg {
         position: absolute;
         color: #c65139;
         font-size: 1.6rem;
